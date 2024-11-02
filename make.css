@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+
+  * a {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+h1{
+  font-size: 3rem;
+}
+.container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("./image/history.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navBar-make {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+    
+  }
+  .navBar-make ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar-make ul li {
+    padding: 0 25px;
+  }
+  .navBar-make ul li a {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+  .make{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 0 3rem ;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255,255,255,0.18);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+  }
+
+  .make-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+ ol{
+    display: flex;
+    flex-direction: column ;
+    gap: 8px;
+    padding-left: 3rem;
+ }
+ .make h2{
+  margin-bottom: 8px;
+ } 
+ .make-technic{
+  display: flex;
+  flex-direction: column;
+ }
+ img{
+  border-radius: 20px;
+  margin:1rem 0;
+ }
+ p{
+  text-indent: 2rem;
+  text-align: justify;
+ }
